@@ -8,7 +8,6 @@
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #000;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
@@ -57,9 +56,9 @@
     display: inline-block;
     height: func.get(vars.$nav, link-h);
     line-height: func.get(vars.$nav, link-h);
-    text-align: center; // center the text vertically
+    text-align: center;
     text-decoration: none;
-    color: #000;
+    color: func.get(vars.$nav, color-text-primary);
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -69,7 +68,7 @@
 
     &:link,
     &:visited {
-      color: #000;
+      color: func.get(vars.$nav, color-text-primary);
     }
 
     &:hover {

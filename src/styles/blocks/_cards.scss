@@ -10,13 +10,9 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease 0s, box-shadow 0.3s ease 0s;
-
-  // transition-property: transform, box-shadow;
-  // transition-duration: 0.3s, 0.3s;
-  // transition-timing-function: ease, ease;
-  // transition-delay: 0s;
-
+  transition:
+    transform 0.3s ease 0s,
+    box-shadow 0.3s ease 0s;
 
   &__image {
     width: 160px;
