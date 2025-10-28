@@ -41,7 +41,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 
     & .card__title {
-      color: #34568b;
+      color: func.get(vars.$card, color-title-hover);
     }
   }
   &__code {
@@ -113,21 +113,21 @@
     border: 1px solid transparent;
     width: 166px;
     height: func.get(vars.$card, space-xl);
-    background-color: #00acdc;
+    background-color: func.get(vars.$card, color-button-primary);
     border-radius: 5px;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     line-height: func.get(vars.$card, space-xl);
     text-transform: uppercase;
-    color: #fff;
+    color: func.get(vars.$card, color-primary);
     text-align: center;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #fff;
-      color: #00acdc;
-      border: 1px solid #00acdc;
+      background-color: func.get(vars.$card, color-primary);
+      color: func.get(vars.$card, color-button-primary);
+      border: 1px solid func.get(vars.$card, color-button-primary);
     }
   }
 }
